@@ -1,0 +1,470 @@
+
+/* MediaQuery 0 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+     width: 100%;
+}
+body{
+    background-color: #e8a439;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    margin-bottom: 1.2rem;
+    text-decoration: underline;
+}
+h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+div>h3{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: #9ed1fc;
+}
+.menu-cerrado{
+    position: fixed;
+    width: 60vw;
+    margin-left: -100vw;
+    top: 0;
+    height: 100vh;
+    float: left;
+}
+div.parrafos{
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+section.seccion{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+main{
+    margin-top: 16vh;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+div.img{
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    
+}
+nav ul{
+    width: 60vw;    
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-color: #9ed1fc;
+    }
+nav ul li{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin: 1.5rem;
+}
+nav ul li a{
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(39, 3, 82);
+}
+i#boton-menu-cerrado{
+    font-size: 4rem;
+    line-height: 15vh;
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    float: left;
+}
+i#boton-menu-abierto{
+
+    font-size: 4rem;
+    line-height: 15vh;
+    position: absolute;
+    top: 2%;
+    left: 65vw;
+    float: right;
+    display: none;
+}
+.menu-desplegado{
+    border-radius: 45%;
+    width: 60vw;
+    margin-left: 0;
+    margin-top: 2rem;
+    position: fixed;
+    height: 100vh;
+    float: left;
+}
+footer{
+    background-color: #9ed1fc;
+    width: 100%;
+    height: 15%;
+    position: static;
+    left: 0;
+    bottom: 0;
+    padding-left: 3%
+}
+footer>div.vcard{
+    width: 45%;
+    float: left;
+}
+footer>div.copy{
+    width: 50%;
+    float: left;
+}
+.botonSubir{
+    position: fixed;
+    text-decoration: none;
+    color: rgba(105, 105, 105, 0.568);
+    font-size: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    display: none;
+}
+.como-llegar{
+    margin: 2rem;
+}
+.icono-transporte{
+    padding: 1rem;
+    width: 25%;
+    vertical-align: middle;
+}
+.nollegar{
+    width: 70%;
+    display: none;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    vertical-align: middle;
+}
+p.llegar{
+    width: 70%;
+    display: inline-block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    vertical-align: middle;
+}
+table{
+    width: 100%;
+    display: inline-table;
+    border-collapse: collapse;
+}
+.contenedor-tabla{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+tr, td{
+    text-align: center;
+    padding: 0.5rem;
+    border:  1px solid black;
+    border-collapse: collapse;
+}
+
+/*MediaQuery de 640px a 1100px*/
+
+@media screen and (min-width: 640px) and (max-width: 1100px){
+        body{
+            background-color: red;
+        }
+        main{
+            margin-top: 15vh;
+            width: 100%;
+        }
+        h1{
+            font-size: 2.8rem;
+            text-decoration: underline;
+        }
+        h2{
+            font-size: 2.2rem;
+        }
+        header{
+           background-color: #5bb5ff;
+           height: 12vh;
+        }
+        .menu-cerrado{
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            line-height: 100%;
+            margin-left: 0;
+            top: 0;
+            left: 0;
+            float: none;     
+        }
+        nav ul{
+            width: 100%;    
+            height: 10%;
+            line-height: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            font-size: 1.5rem;
+            background-color: #5bb5ff;
+            }
+        nav ul li{
+            width: 20%;
+            padding: 1rem;
+            margin: 0;
+            padding-bottom: 1vh;
+        }
+        nav ul li:hover{
+            background-color: rgb(109, 250, 203);
+        }
+        nav ul li a{
+            font-style: normal;
+            text-decoration: none;
+            color: rgb(4, 29, 97);   
+        }
+        i#boton-menu-cerrado{
+            display: none;
+        }
+        i#boton-menu-abierto{
+            display: none;
+        }
+        div.parrafos{
+            width: 80%;
+            font-size: 1.3rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 6%;
+            padding-right: 6%;
+        }    
+        .como-llegar{
+            margin: 2rem;
+        }
+        .icono-transporte{
+            padding: 1rem;
+            width: 8rem;
+        }
+        .nollegar{
+            width: 70%;
+            display: none;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 3rem;
+       } 
+        p.llegar{
+            width: 70%;
+            display: inline-block;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 3rem;
+        }
+        img{
+            display: inline;     
+            width: 80%;
+            height: auto;
+        } 
+        table{
+            width: 80%;
+            font-size: 1.5rem;
+            display: inline-table;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .contenedor-img{
+            width: 100%;
+            text-align: center;   
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contenedor-tabla{
+            width: 100%;
+            text-align: center;   
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    /* MediaQuery de mas de 1100px */
+
+@media screen and (min-width: 1100px){
+    body{
+        background-color: blue;
+   }
+   main{
+       margin-top: 15vh;
+       width: 100%;
+       padding-left: 5%;
+       padding-right: 5%;
+    }
+    h1{
+        font-size: 3.2rem;
+        text-decoration: underline;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+   header{
+      background-color: #5bb5ff;
+      height: 10vh;
+      border-radius: 45%;  
+   }
+   .menu-cerrado{
+       width: 100%;
+       text-align: center;
+       position: fixed;
+       line-height: 100%;
+       margin-left: 0;
+       top: 0;
+       left: 0;
+       float: none;    
+   }
+   nav ul{
+       width: 100%;    
+       height: 10%;
+       line-height: 100%;
+       list-style: none;
+       display: flex;
+       flex-direction: row;
+       font-size: 1.5rem;
+       background-color: #5bb5ff;
+       }
+   nav ul li{
+       width: 20%;
+       padding: 1rem;
+       margin: 0;
+       padding-bottom: 1vh;
+   }
+   nav ul li:hover{
+       background-color: rgb(109, 250, 203);
+   }
+   nav ul li a{
+       font-style: normal;
+       text-decoration: none;
+       color: rgb(4, 29, 97);       
+    }
+   i#boton-menu-cerrado{
+       display: none;
+   }
+   i#boton-menu-abierto{
+       display: none;
+   }
+   main{
+       padding-left: 0;
+       padding-right: 0;
+   }
+   div.parrafos{
+        width: 60%;
+        font-size: 1.5rem;
+   }
+   .como-llegar{
+    margin: 2rem;
+   }
+    .icono-transporte{
+        padding: 1rem;
+        width: 10rem;
+   }
+    .nollegar{
+        width: 70%;
+        display: none;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5rem;
+   }
+   .llegar{
+        width: 70%;
+        display: inline-block;
+        font-size: 2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5rem;
+    }
+   img{
+       display: inline;     
+       width: 80%;
+       height: auto;
+   } 
+   table{
+       width: 80%;
+       font-size: 1.5rem;
+       display: inline-table;
+       border: 1px solid black;
+       border-collapse: collapse;
+       
+   }
+   .contenedor-img{
+        width: 100%;
+        text-align: center;   
+        margin-left: auto;
+        margin-right: auto;
+   }
+   .contenedor-tabla{
+        width: 100%;
+        text-align: center;   
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+   }
+
+
+
+  /*  .telefonos{
+       display: flex;
+       flex-direction: column; 
+} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

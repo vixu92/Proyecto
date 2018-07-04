@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow"/>
+    <meta name="copyright" content="2018 Javier Ruiz">
+    <meta name="author" content="Javier R.">
+    <meta name="description" content="Pagina dedicada a la localidad alicantina de Guardamar del Segura">
+    <meta name="keywords" content="playa guardamar alicnte costa verano vacaciones economia historia">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>Guardamar del Segura - Alicante</title>
+</head>
+
+<body id="inicio">
+    <header>
+        <i onclick="abrirCerrarmenu()" class="fas fa-angle-double-right" id="boton-menu-cerrado"></i>
+        <i onclick="abrirCerrarmenu()" class="fas fa-angle-double-left" id="boton-menu-abierto"></i>
+        <nav id="menu" class="menu-cerrado">
+            <ul class="boton">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html">Geografía</a>
+                </li>
+                <li>
+                    <a href="./index.html">Historia</a>
+                </li>
+                <li>
+                    <a href="./index.html">Economía</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <h1>Guardamar del Segura</h1>
+            <h2>Como llegar</h2>
+            <section class="principal">
+                
+    <article>
+           
+<div class="como-llegar">
+                <img onclick="mostrarCoche()" class="icono-transporte" src="./img/coche.png" alt="Icono coche">
+ 
+                <p id="coche" class="nollegar">Llegar a Guardamar en coche desde Alicante tiene dos opciones, la autovía Alicante- Murcia en la que hay que tomar el desvío del aeropuerto o la N-340. En caso de venir desde Benidorm la opción es la autopista A-7. Elige las rutas para llegar más rápido.</p>
+            </div>
+    </article> 
+    <hr>
+    <article>          
+            
+<div class="como-llegar">
+                <img onclick="mostrarBus()" class="icono-transporte"  src="./img/bus.png" alt="Icono bus">
+
+                <p id="bus" class="nollegar">La estación de autobuses se encuentra en C/ Molivent s/n. donde podrá viajar con Costa Azul (Alacant-Cartagena), Vegabus (Guardamar-Elx) y Agostense (Guardamar-Oriola).En la estación de autobuses hay una parada de taxi y parada de autobús urbano.</p>
+            </div>
+    </article>
+    <hr>
+    <article>
+               
+ <div class="como-llegar">
+                <img onclick="mostrarTren()" class="icono-transporte" src="./img/tren.png" alt="Icono tren">
+
+                  <p id="tren" class="nollegar">La conexión más cercana en tren es en Alicante. La estación situada en el centro de la capital tiene cercana la de autobuses desde la que se sale hasta Guardamar.</p>
+            </div>
+    </article>
+    <hr>
+    <article>
+            
+<div class="como-llegar">
+                <img onclick="mostrarAvion()" class="icono-transporte" src="./img/avion.png" alt="Icono avion">
+
+                  <p id="avion" class="nollegar">Nos encontramos a unos 25 km del aeropuerto de Alicante, donde podrá utilizar un servicio de taxi para llegar hasta Guardamar.</p>
+            </div>
+    </article>        
+            </section>
+    </main>
+    <span onclick="subir()" class="botonSubir" id="botonArriba" ><i class="fas fa-arrow-alt-circle-up"></i></span>
+</body>
+</html>
