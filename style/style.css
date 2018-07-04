@@ -10,10 +10,12 @@ html{
      width: 100%;
 }
 body{
+    background-color: #e99918;
     background-color: #e8a439;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
 }
 h1{
     font-size: 2.5rem;
@@ -77,7 +79,6 @@ img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    
 }
 nav ul{
     width: 60vw;    
@@ -158,8 +159,10 @@ footer>div.copy{
     padding: 1rem;
     width: 25%;
     vertical-align: middle;
+    box-shadow: 1px 3px 1px #e99918;
+    border-radius: 15%;
 }
-.nollegar{
+.llegar-no-visible{
     width: 70%;
     display: none;
     font-size: 1.1rem;
@@ -169,7 +172,7 @@ footer>div.copy{
     padding-left: 4rem;
     vertical-align: middle;
 }
-p.llegar{
+p.llegar-visible{
     width: 70%;
     display: inline-block;
     font-size: 1.1rem;
@@ -198,9 +201,6 @@ tr, td{
 /*MediaQuery de 640px a 1100px*/
 
 @media screen and (min-width: 640px) and (max-width: 1100px){
-        body{
-            background-color: red;
-        }
         main{
             margin-top: 15vh;
             width: 100%;
@@ -246,6 +246,7 @@ tr, td{
             background-color: rgb(109, 250, 203);
         }
         nav ul li a{
+            font-size: 2rem;
             font-style: normal;
             text-decoration: none;
             color: rgb(4, 29, 97);   
@@ -272,8 +273,10 @@ tr, td{
         .icono-transporte{
             padding: 1rem;
             width: 8rem;
+            box-shadow: 3px 5px 3px #e99918;
+            border-radius: 15%;
         }
-        .nollegar{
+        .llegar-no-visible{
             width: 70%;
             display: none;
             font-size: 1.5rem;
@@ -282,7 +285,7 @@ tr, td{
             margin-right: auto;
             padding-left: 3rem;
        } 
-        p.llegar{
+        p.llegar-visible{
             width: 70%;
             display: inline-block;
             font-size: 1.5rem;
@@ -322,9 +325,7 @@ tr, td{
     /* MediaQuery de mas de 1100px */
 
 @media screen and (min-width: 1100px){
-    body{
-        background-color: blue;
-   }
+
    main{
        margin-top: 15vh;
        width: 100%;
@@ -373,6 +374,7 @@ tr, td{
        background-color: rgb(109, 250, 203);
    }
    nav ul li a{
+       font-size: 2rem;
        font-style: normal;
        text-decoration: none;
        color: rgb(4, 29, 97);       
@@ -388,17 +390,25 @@ tr, td{
        padding-right: 0;
    }
    div.parrafos{
-        width: 60%;
+        width: 85%;
         font-size: 1.5rem;
+        column-count: 2;
+        margin-bottom: 1rem;
+        justify-content: center;
+   }
+   p{
+       margin-bottom: 1rem;
    }
    .como-llegar{
-    margin: 2rem;
+        margin: 2rem;
    }
     .icono-transporte{
         padding: 1rem;
         width: 10rem;
+        box-shadow: 4px 6px 4px #e99918;
+        border-radius: 15%;
    }
-    .nollegar{
+    .llegar-no-visible{
         width: 70%;
         display: none;
         font-size: 2rem;
@@ -407,7 +417,7 @@ tr, td{
         margin-right: auto;
         padding-left: 5rem;
    }
-   .llegar{
+   .llegar-visible{
         width: 70%;
         display: inline-block;
         font-size: 2rem;
@@ -418,8 +428,9 @@ tr, td{
     }
    img{
        display: inline;     
-       width: 80%;
+       width: 60%;
        height: auto;
+       margin-bottom: 2rem;
    } 
    table{
        width: 80%;
@@ -427,7 +438,6 @@ tr, td{
        display: inline-table;
        border: 1px solid black;
        border-collapse: collapse;
-       
    }
    .contenedor-img{
         width: 100%;
@@ -443,13 +453,6 @@ tr, td{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
    }
-
-
-
-  /*  .telefonos{
-       display: flex;
-       flex-direction: column; 
-} */
 }
 
 

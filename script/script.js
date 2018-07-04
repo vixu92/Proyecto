@@ -35,8 +35,8 @@ function mostrarCoche(){
 
     var coche = document.getElementById("coche");
 
-    coche.classList.toggle("llegar");
-    coche.classList.toggle("nollegar");
+    coche.classList.toggle("llegar-visible");
+    coche.classList.toggle("llegar-no-visible");
     
  /*   if(coche.style.display == "none"){
         alert("Hola desde el if");
@@ -55,22 +55,22 @@ function mostrarBus(){
 
     var bus = document.getElementById("bus");
     
-    bus.classList.toggle("llegar");
-    bus.classList.toggle("nollegar");
+    bus.classList.toggle("llegar-visible");
+    bus.classList.toggle("llegar-no-visible");
 }
 
 function mostrarTren(){
 
     var tren = document.getElementById("tren");
 
-    tren.classList.toggle("llegar");
-    tren.classList.toggle("nollegar");
+    tren.classList.toggle("llegar-visible");
+    tren.classList.toggle("llegar-no-visible");
 }
 
 function mostrarAvion(){
 
     var avion = document.getElementById("avion");
     
-    avion.classList.toggle("llegar");
-    avion.classList.toggle("nollegar");
+    avion.classList.toggle("llegar-visible");
+    avion.classList.toggle("llegar-no-visible");
 }
