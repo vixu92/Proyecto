@@ -18,59 +18,53 @@ function abrirCerrarmenu(){
 window.onscroll = function(){botonArriba()};
 
 function botonArriba(){
+    var botonArriba = document.getElementById("botonArriba");
+  //  var cabecera = document.getElementById("radioMenu");
+
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
 
-        document.getElementById("botonArriba").style.display = "inline";
-
+        botonArriba.style.display = "inline";
+       // cabecera.classList.toggle("cabecera");
     }else{
 
-        document.getElementById("botonArriba").style.display = "none";
+        botonArriba.style.display = "none";
+       // cabecera.classList.toggle("cabecera")
     }
 }
 function subir(){
 
     window.scrollTo(0,0)
 }
+
 function mostrarCoche(){
 
-    var coche = document.getElementById("coche");
-
-    coche.classList.toggle("llegar-visible");
-    coche.classList.toggle("llegar-no-visible");
+    var coche = "Llegar a Guardamar en coche desde Alicante tiene dos opciones, la autovía Alicante- Murcia en la que hay que tomar el desvío del aeropuerto o la N-340. En caso de venir desde Benidorm la opción es la autopista A-7. Elige las rutas para llegar más rápido."
     
- /*   if(coche.style.display == "none"){
-        alert("Hola desde el if");
+    var parrafo = document.getElementById("transporte");
+    parrafo.innerHTML = coche
+}
 
-        coche.style.display = "inherit";
+function mostrarTren(){
+    var tren = "La conexión más cercana en tren es en Alicante. La estación situada en el centro de la capital tiene cercana la de autobuses desde la que se sale hasta Guardamar."
 
-    }else{
+    var parrafo = document.getElementById("transporte");
 
-        alert("Hola desde el else");
-        
-        coche.style.display = "none";
-    }*/
+    parrafo.innerHTML = tren
 }
 
 function mostrarBus(){
 
-    var bus = document.getElementById("bus");
-    
-    bus.classList.toggle("llegar-visible");
-    bus.classList.toggle("llegar-no-visible");
-}
+    var bus = "La estación de autobuses se encuentra en C/ Molivent s/n. donde podrá viajar con Costa Azul (Alacant-Cartagena), Vegabus (Guardamar-Elx) y Agostense (Guardamar-Oriola).En la estación de autobuses hay una parada de taxi y parada de autobús urbano.";
 
-function mostrarTren(){
+    var parrafo = document.getElementById("transporte");
 
-    var tren = document.getElementById("tren");
-
-    tren.classList.toggle("llegar-visible");
-    tren.classList.toggle("llegar-no-visible");
+       parrafo.innerHTML = bus;
 }
 
 function mostrarAvion(){
+    var avion = "Nos encontramos a unos 25 km del aeropuerto de Alicante, donde podrá utilizar un servicio de taxi para llegar hasta Guardamar.";
 
-    var avion = document.getElementById("avion");
-    
-    avion.classList.toggle("llegar-visible");
-    avion.classList.toggle("llegar-no-visible");
+    var parrafo = document.getElementById("transporte");
+
+    parrafo.innerHTML = avion 
 }
