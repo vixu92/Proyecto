@@ -19,16 +19,21 @@ window.onscroll = function(){botonArriba()};
 
 function botonArriba(){
     var botonArriba = document.getElementById("botonArriba");
-  //  var cabecera = document.getElementById("radioMenu");
+    var cabecera = document.getElementById("cabecera");
+    var menu = document.getElementById("menu");
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
 
         botonArriba.style.display = "inline";
-       // cabecera.classList.toggle("cabecera");
+        cabecera.style.borderRadius = "0%";
+        cabecera.classList.toggle("sin-radio-header");
+        menu.style.height = "5vh";
     }else{
 
         botonArriba.style.display = "none";
-       // cabecera.classList.toggle("cabecera")
+        cabecera.style.borderRadius = "50%";
+        cabecera.classList.toggle("sin-radio-header");
+        menu.style.height = "12vh";
     }
 }
 function subir(){
