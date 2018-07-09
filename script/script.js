@@ -19,21 +19,16 @@ window.onscroll = function(){botonArriba()};
 
 function botonArriba(){
     var botonArriba = document.getElementById("botonArriba");
-    var cabecera = document.getElementById("cabecera");
-    var menu = document.getElementById("menu");
+  //  var cabecera = document.getElementById("radioMenu");
 
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
 
         botonArriba.style.display = "inline";
-        cabecera.style.borderRadius = "0%";
-        cabecera.classList.toggle("sin-radio-header");
-        menu.style.height = "5vh";
+       // cabecera.classList.toggle("cabecera");
     }else{
 
         botonArriba.style.display = "none";
-        cabecera.style.borderRadius = "50%";
-        cabecera.classList.toggle("sin-radio-header");
-        menu.style.height = "12vh";
+       // cabecera.classList.toggle("cabecera")
     }
 }
 function subir(){
@@ -72,4 +67,24 @@ function mostrarAvion(){
     var parrafo = document.getElementById("transporte");
 
     parrafo.innerHTML = avion 
+}
+function galeria1(){
+    var imagen = document.getElementById("principal");
+
+        imagen.src="img/guardamar.jpg" 
+}
+function galeria2(){
+    var imagen = document.getElementById("principal");
+
+    imagen.src="img/dunas.jpg" 
+}
+function galeria3(){
+    var imagen = document.getElementById("principal");
+
+    imagen.src="img/pinada.jpg" 
+}
+function galeria4(){
+    var imagen = document.getElementById("principal");
+
+    imagen.src="img/limon.jpg" 
 }
