@@ -12,7 +12,7 @@ function abrirCerrarmenu(){
 
         menu.className = "menu-cerrado";
         botonCerrar.style.display = "none"; 
-        botonAbrir.style.display = "inline";   
+        botonAbrir.style.display = "inline";
     }
 }
 window.onscroll = function(){botonArriba()};
